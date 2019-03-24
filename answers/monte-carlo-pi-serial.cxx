@@ -18,7 +18,7 @@ int main() {
   using namespace std;
 
   benchmark<chrono::high_resolution_clock> bm;
-  stop_after_count_controller swsc(50'000'000);
+  stop_after_count_controller swsc(50'000'0000);
 
   cout << "Running... "; cout.flush();
   bm.start(); // start benchmarking
