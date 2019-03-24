@@ -1,6 +1,6 @@
 CXXFLAGS=-I./provided-all/ -std=c++17 -Wall -Wextra -O3 -pthread
 
-all: monte-carlo-pi-serial.exe
+all: monte-carlo-pi-async.exe
 
 clean:
 	rm -f *.exe *.o
@@ -13,3 +13,4 @@ monte-carlo-pi-parstl.exe: monte-carlo-pi-parstl.cxx
 
 monte-carlo-pi-parstl-timed.exe: monte-carlo-pi-parstl-timed.cxx
 	$(CXX) $(CXXFLAGS) -fopenmp -o $@ $< -ltbb
+
